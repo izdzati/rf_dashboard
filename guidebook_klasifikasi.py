@@ -45,8 +45,7 @@ if uploaded_file is not None:
         Y = df[target_column]
 
         # Step 4: Split data menjadi data train dan test
-        # Penentuan test size bisa disesuaikan ingin membagi data menjadi 70%/30%,
-          80%/20%, 75%/25%
+        # Penentuan test size bisa disesuaikan ingin membagi data menjadi 70%/30%,80%/20%, 75%/25%
         X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
         # Step 5: Fit model klasifikasi
